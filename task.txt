@@ -1,0 +1,25 @@
+Implement the BayesFactor class in bayes_factor.py.
+
+Required method signatures:
+__init__(self, n, k)
+likelihood(self, theta)
+evidence_slab(self)
+evidence_spike(self)
+bayes_factor(self)
+
+The slab prior is Uniform(0, 1).
+The spike prior is Uniform(0.47, 0.53).
+
+Please do not modify the test file.
+Please do not change the constructor signature.
+Please use the class name BayesFactor.
+Please keep all required method names exactly.
+
+Additional implementation requirements:
+likelihood(theta) should compute the binomial likelihood.
+evidence_slab() should compute the marginal likelihood under the slab prior.
+evidence_spike() should compute the marginal likelihood under the spike prior.
+bayes_factor() should return evidence_spike() divided by evidence_slab().
+Please use scipy.integrate.quad where numerical integration is needed.
+Please handle invalid inputs appropriately.
+
